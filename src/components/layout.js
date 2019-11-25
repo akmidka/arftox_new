@@ -8,7 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import insta from "../images/insta.png"
+import twitter from "../images/twitter.png"
 import Header from "./header"
 import "./layout.css"
 
@@ -26,19 +27,16 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
+      <div        
       >
-        <main>{children}</main>
+        <main >{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="/">
+            <img src={insta} />
+          </a>
+          <a href="/">
+            <img src={twitter} />
+          </a>
         </footer>
       </div>
     </>
