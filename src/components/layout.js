@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import insta from "../images/insta.png"
 import twitter from "../images/twitter.png"
 import Header from "./header"
-import "./layout.css"
+// import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
